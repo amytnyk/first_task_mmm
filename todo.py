@@ -26,12 +26,14 @@ def exit_interface():
     else:
         print("Okay, see you later!")
         # func to write csv_file
+
+
 """
 This file contains implementations of function that adds new tasks to tasks database.
 """
 
 
-def add_new_task(descr:str, due_date:date, prio:int, todo_list:dict):
+def add_new_task(descr: str, due_date: date, prio: int, todo_list: dict):
     """
     This function adds new task to dictionary {date:[]} with priority prio and description descr.
     Function should get valid arrguments (it is checked in add_new_task_interface function)
@@ -44,7 +46,8 @@ def add_new_task(descr:str, due_date:date, prio:int, todo_list:dict):
     todo_list[due_date].insert(prio, descr)
     return todo_list
 
-def add_new_task_interface(todo_list:dict):
+
+def add_new_task_interface(todo_list: dict):
     """
     Function interacts with user using command prompt and adds new task (given by user) to todo_list.
     Returns changed todo_list with a new task
@@ -78,12 +81,9 @@ def add_new_task_interface(todo_list:dict):
                 continue
     else:
         new_prio = 0
-    add_new_task(desc,due_date,new_prio,todo_list)
+    add_new_task(desc, due_date, new_prio, todo_list)
     print('Successfulli added new task to task manager!')
     return todo_list
-
-
-
 
 
 def write_to_csv(dct):
@@ -146,8 +146,12 @@ def mark_as_done(dct):
     return new_dct
 
 
+def main():
+    todo_list = {}
+    while True:
+        exit_interface()
+        add_new_task_interface(todo_list)
+
+
 if __name__ == "__main__":
-    dct = {}
-    d = date(2002, 12, 31)
-    dct[d] = ["sth", "sth1", "sth2"]
-    write_to_csv(dct)
+    main()
