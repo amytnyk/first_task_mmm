@@ -64,7 +64,6 @@ def mark_as_done(dct):
     return new_dct
 
 
-
 if __name__ == "__main__":
     dct = {}
     d = date(2002, 12, 31)
