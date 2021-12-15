@@ -1,4 +1,3 @@
-(https://github.com/amytnyk/first_task_mmm/tree/main/.github/workflows)
 
 A project to help people with an enormous amount of their deadlines. 
 
