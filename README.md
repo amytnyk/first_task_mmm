@@ -9,7 +9,7 @@ the order of the name for the given due date is its priority.
 
 When a new task is added, if it isn't the only one for this date, the function asks user about the priority
 
-## Add done function
+## Add done function that removes done task from dictionary
 
 ## Develop write_to_csv() function
 
