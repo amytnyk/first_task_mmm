@@ -16,4 +16,4 @@ writes all tasks from the dictionary to a file
 
 ## Add exit option
 
-## Add a function for checking date and displaying current tasks. The list of tasks is sorted by the due date
+## Add a function for checking date and displaying current tasks. The list of tasks stored in dictionary by key(due date)
